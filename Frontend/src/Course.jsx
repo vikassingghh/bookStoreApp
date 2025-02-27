@@ -8,7 +8,7 @@ const Course = () => {
   useEffect(()=>{
     const getBook = async()=>{
       try {
-        const res = await axios.get("https://bookstoreapp-backend-8y5k.onrender.com/book");
+        const res = await axios.get("http://localhost:4001/book");
         console.log(res.data);
         setbook(res.data);
         console.log("All good");
