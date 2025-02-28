@@ -27,8 +27,8 @@ try {
 }
 
 //creating routes
-app.use("/book",bookRoute);
-app.use("/users",userRoute);
+// app.use("/book",bookRoute);
+// app.use("/users",userRoute);
 
 app.get("/",(req,res)=>{
     res.send('Hello World!')
