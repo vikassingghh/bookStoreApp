@@ -30,6 +30,11 @@ try {
 app.use("/book",bookRoute);
 app.use("/users",userRoute);
 
+app.get("/",(req,res)=>{
+    res.send('Hello World!')
+})
+
 app.listen(PORT, () => {
+    // res.send('Hello World!')
   console.log(`Example app listening on port ${PORT}`)
 })
