@@ -22,7 +22,7 @@ const SignUp = () => {
       password: data.password,
     }
     await axios
-    .post("https://book-store-app-tan-eight.vercel.app/users/signup", userInfo)
+    .post("https://bookstore-backend-1-q4nk.onrender.com/users/signup", userInfo)
     .then((res) => {
       console.log(res.data);
       if(res.data){

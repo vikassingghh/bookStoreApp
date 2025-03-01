@@ -9,7 +9,7 @@ const Freebook = () => {
   useEffect(()=>{
     const getBook = async()=>{
       try {
-        const res = await axios.get("https://book-store-app-tan-eight.vercel.app/book");
+        const res = await axios.get("https://bookstore-backend-1-q4nk.onrender.com/book/view");
         console.log(res.data);
         setbook(res.data.filter((data) => data.category === "Free"))
       } catch (error) {

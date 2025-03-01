@@ -35,6 +35,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(PORT, () => {
-    // res.send('Hello World!')
-  console.log(`Example app listening on port ${PORT}`)
+    console.log(`Example app listening on port ${PORT}`)
 })

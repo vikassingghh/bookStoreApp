@@ -18,7 +18,7 @@ const Login = () => {
             password: data.password,
           }
           await axios
-          .post("https://book-store-app-tan-eight.vercel.app//users/login", userInfo)
+          .post("https://bookstore-backend-1-q4nk.onrender.com/users/login", userInfo)
           .then((res) => {
             console.log(res.data);
             if(res.data){
